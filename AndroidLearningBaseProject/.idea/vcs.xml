@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="VcsDirectoryMappings">
+    <mapping directory="$PROJECT_DIR$/.." vcs="Git" />
+    <mapping directory="$PROJECT_DIR$" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/BeardGadget" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/DPStatus" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/GoogleAndFacebookSignUpAndLogin" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Hacked" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/MVVM TODO" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/MVVMEX" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/R NEWS" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Spinner" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/StripPaymentGateway" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Telegram" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/ThrillChaser" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/XicomMachineTest" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/paper" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/quickblox-android-sdk" vcs="Git" />
+  </component>
+</project>
