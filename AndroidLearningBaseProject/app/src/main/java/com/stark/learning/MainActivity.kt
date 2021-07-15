@@ -9,22 +9,24 @@ import androidx.recyclerview.widget.StaggeredGridLayoutManager
 import com.stark.learning.alertdialog.IAlertDialog
 import com.stark.learning.animation.RotateImageActivity
 import com.stark.learning.animation.RotateManyImages
+import com.stark.learning.component.CustomSpinner
 import com.stark.learning.constraintlayout.CLL2
 import com.stark.learning.constraintlayout.ConstraintLayoutEx
 import com.stark.learning.constraintlayout.LoginExActivity
 import com.stark.learning.constraintlayout.ProfileEx
 import com.stark.learning.core.ItemDetailHostActivity
+import com.stark.learning.core.MainActivity
+import com.stark.learning.core.MainActivity2
 import com.stark.learning.coroutines.CWithP
 import com.stark.learning.coroutines.CoroutineStarter
 import com.stark.learning.design.BottomSheet
 import com.stark.learning.design.FragmentBottomSheet
+import com.stark.learning.motionlayout.MotionLayout
 import com.stark.learning.permission.ContactPermission
 import com.stark.learning.recyclerview.NestedRecyclerView
 import com.stark.learning.recyclerview.StaggeredRecyclerView
 import com.stark.learning.testing.TestActivity
 import kotlinx.android.synthetic.main.activity_main.*
-import com.stark.learning.core.MainActivity
-import com.stark.learning.core.MainActivity2
 import kotlin.reflect.KClass
 
 class MainActivity : AppCompatActivity() {
@@ -55,7 +57,9 @@ class MainActivity : AppCompatActivity() {
             "C with P",
             "Image Upload",
             "On Test",
-            "TV"
+            "TV",
+            "Motion Layout",
+            "Custom Spinner"
         )
 
         recyclerView.layoutManager =
@@ -88,6 +92,8 @@ class MainActivity : AppCompatActivity() {
             14 -> startActivity(MainActivity2::class)
             15 -> startActivity(ItemDetailHostActivity::class)
             16 -> startActivity(MainActivity::class)
+            17 -> startActivity(MotionLayout::class)
+            18 -> startActivity(CustomSpinner::class)
         }
     }
 
@@ -100,7 +106,8 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun showIAlertDialog() {
-        IAlertDialog.IBuilder(this).setCancelable(false)
+        IAlertDialog.IBuilder(this)
+            .setCancelable(false)
             .setTitle("Location Service Off")
             .setMessage("Turn on Location Services in Setting > Privacy to allow Maps to determine your current location")
             .setPositiveButton("Yes", { startActivity(RotateImageActivity::class) })

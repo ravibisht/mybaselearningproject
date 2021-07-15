@@ -12,5 +12,5 @@ import com.stark.learning.alertdialog.IAlertDialog
         .setNegativeButton("No",dismiss = true)
         .create()
         .show()
-
 }
+
